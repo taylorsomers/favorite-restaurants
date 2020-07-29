@@ -47,6 +47,7 @@ _Keep track of your favorite restaurants, any details about them and what type o
 
 | Bug : Message |  Situation  | Resolved (Y/N) |  How was the issue resolved?  |
 | ------- | ----- | ------ | ------- |
+| 'RestaurantContext' does not contain a definition for 'Cuisines' and no accessible extension method 'Cuisines' accepting a first argument of type 'RestaurantContext' could be found (are you missing a using directive or an assembly reference?) [Restaurant] | Setting up CuisinesController Index View | Y | Add `public virtual DbSet<Cuisine> Cuisines { get; set; }` to RestaurantContext.cs |
  
 
 
