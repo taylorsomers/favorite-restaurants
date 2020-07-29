@@ -1,22 +1,20 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Restaurant.Models;
+using FavoriteRestaurant.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Restaurant.Controllers
+namespace FavoriteRestaurant.Controllers
 {
   public class RestaurantsController : Controller
   {
-    private readonly RestaurantContext _db;
+    private readonly FavoriteRestaurantContext _db;
 
-    public RestaurantsController(RestaurantContext db)
+    public RestaurantsController(FavoriteRestaurantContext db)
     {
       _db = db;
     }
-
-          // List<Cuisine> model = _db.Cuisines.OrderBy(cuisine => cuisine.Type).ToList();
 
     public ActionResult Create()
     {
