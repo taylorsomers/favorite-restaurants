@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Restaurant.Models
+namespace FavoriteRestaurant.Models
 {
   public class Cuisine
   {
