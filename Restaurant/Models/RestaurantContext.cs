@@ -1,12 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace Restaurant.Models
+namespace FavoriteRestaurant.Models
 {
-  public class RestaurantContext : DbContext
+  public class FavoriteRestaurantContext : DbContext
   {
     public virtual DbSet<Cuisine> Cuisines { get; set; }
     public DbSet<Restaurant> Restaurants { get; set; }
 
-    public RestaurantContext(DbContextOptions options) : base(options) { }
+    public FavoriteRestaurantContext(DbContextOptions options) : base(options) { }
   }
 }
