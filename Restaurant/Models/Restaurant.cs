@@ -12,5 +12,7 @@ namespace FavoriteRestaurant.Models
     public string Address { get; set; }
     public string PhoneNumber { get; set; }
     public string PassedHealthInspection { get; set; }
+    public virtual Cuisine Cuisine { get; set; }
+  
   }
 }
