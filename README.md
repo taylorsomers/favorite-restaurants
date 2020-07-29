@@ -48,8 +48,10 @@ _Keep track of your favorite restaurants, any details about them and what type o
 | Bug : Message |  Situation  | Resolved (Y/N) |  How was the issue resolved?  |
 | ------- | ----- | ------ | ------- |
 | 'RestaurantContext' does not contain a definition for 'Cuisines' and no accessible extension method 'Cuisines' accepting a first argument of type 'RestaurantContext' could be found (are you missing a using directive or an assembly reference?) [Restaurant] | Setting up CuisinesController Index View | Y | Add `public virtual DbSet<Cuisine> Cuisines { get; set; }` to RestaurantContext.cs |
-| The type name 'Models' does not exist in the type 'Restaurant' [Restaurant] | Creating the Index view for Cuisine | N |  |
+| The type name 'Models' does not exist in the type 'Restaurant' [Restaurant] | Creating the Index view for Cuisine | Y | Added code to Controllers/RestaurantController |
 | Cannot convert type 'Restaurant.Models.Restaurant.Models.Cuisine' to 'Restaurant.Models.Cuisine' [Restaurant] | Creating the Index view for Cuisine | N |  |
+| Controllers\RestaurantsController.cs(29,12): error CS0118: 'Restaurant' is a namespace but is used like a type [C:\Users\blindgren\Desktop\EPICODUS\Full Time Bootcamp\CS-and-NETCore\Restaurant.Solution\Restaurant\Restaurant.csproj] | Running `dotnet build` | N |  |
+| Controllers\RestaurantsController.cs(29,83): error CS1061: 'Restaurant' does not contain a definition for 'Cuisine' and no accessible extension method 'Cuisine' accepting a first argument of type 'Restaurant' could be found (are you missing a using directive or an assembly reference?) [C:\Users\blindgren\Desktop\EPICODUS\Full Time Bootcamp\CS-and-NETCore\Restaurant.Solution\Restaurant\Restaurant.csproj] | Running `dotnet build` | N |  |
 
 
 ## Support and contact details
