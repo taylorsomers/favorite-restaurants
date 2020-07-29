@@ -57,11 +57,11 @@ _Please feel free to contact the authors through GitHub (LINDGRENBA, taylorsomer
 
 ## Technologies Used
 
-* C# 
+* C#
 * .NET-Core 2.2
 * ASP.NET Core MVC
 * Visual Studio Code
-* Git Version Control 
+* Git Version Control
 * GitHub
 
 
