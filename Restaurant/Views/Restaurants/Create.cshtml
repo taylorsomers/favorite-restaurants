@@ -5,7 +5,7 @@
 @model FavoriteRestaurant.Models.Restaurant
 @using FavoriteRestaurant.Models
 
-<h4>Add a new cuisine</h4>
+<h4>Add a new restaurant</h4>
 
 @using (Html.BeginForm())
 {
@@ -28,11 +28,8 @@
   @Html.TextBoxFor(model => model.PhoneNumber)
   <br>
   @Html.LabelFor(model => model.PassedHealthInspection)
-  @Html.TextBoxFor(model => model.PassedHealthInspection)
-
-  @Html.DropDownList("PassedHealthInspection", 
+  @Html.DropDownList("PassedHealthInspection",
                     new SelectList(Enum.GetValues(typeof(Health))),
-                    "Passed health inspection",
                     new { @class = "form-control" })
   
   

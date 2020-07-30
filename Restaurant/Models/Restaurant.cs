@@ -18,7 +18,7 @@ namespace FavoriteRestaurant.Models
 
   public enum Health
   {
-    Yes,
-    No
+    yes,
+    no
   }
 }

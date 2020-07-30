@@ -33,7 +33,7 @@ namespace FavoriteRestaurant.Controllers
 
     public ActionResult Index()
     {
-      List<Restaurant> model = _db.Restaurants.Include(restaurants => restaurants.CuisineId).ToList();
+      List<Restaurant> model = _db.Restaurants.Include(restaurants => restaurants.Cuisine).ToList();
       model.OrderBy(restaurants => restaurants.Name);
       return View(model);
     }
