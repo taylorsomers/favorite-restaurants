@@ -1,0 +1,21 @@
+@{
+  Layout = "_Layout";
+}
+
+@model FavoriteRestaurant.Models.Restaurant
+@using FavoriteRestaurant.Models
+
+<h2>Restaurant Details</h2>
+<hr>
+<h3>@Html.DisplayNameFor(model => model.Name)</h3>
+<h4>@Html.DisplayNameFor(model => model.Cuisine)</h4>
+<h4>@Html.DisplayNameFor(model => model.PriceRange)</h4>
+<h4>@Html.DisplayNameFor(model => model.Takeout)</h4>
+<h4>@Html.DisplayNameFor(model => model.DineIn)</h4>
+<h4>@Html.DisplayNameFor(model => model.Address)</h4>
+<h4>@Html.DisplayNameFor(model => model.PhoneNumber)</h4>
+<h4>@Html.DisplayNameFor(model => model.PassedHealthInspection)</h4>
+
+<p>@Html.ActionLink("Show all restaurants", "Index")</p>
+<p>@Html.ActionLink("Add new restaurant", "Create")</p>
+<p>@Html.ActionLink("Home", "Index", "Home")</p>
