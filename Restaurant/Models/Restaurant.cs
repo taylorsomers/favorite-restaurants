@@ -11,7 +11,14 @@ namespace FavoriteRestaurant.Models
     public string DineIn { get; set; }
     public string Address { get; set; }
     public string PhoneNumber { get; set; }
-    public string PassedHealthInspection { get; set; }
+    //public string PassedHealthInspection { get; set; }
+    
+    public enum PassedHealthInspection
+{
+    Yes,
+    No   
+}
+    
     public virtual Cuisine Cuisine { get; set; }
   
   }

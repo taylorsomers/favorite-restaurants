@@ -1,0 +1,43 @@
+@{
+  Layout = "_Layout";
+}
+
+@model FavoriteRestaurant.Models.Restaurant
+
+<h4>Add a new cuisine</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name)
+
+  @Html.LabelFor(model => model.PriceRange)
+  @Html.TextBoxFor(model => model.PriceRange)
+  <br>
+  @Html.LabelFor(model => model.Takeout)
+  @Html.TextBoxFor(model => model.Takeout)
+  <br>
+  @Html.LabelFor(model => model.DineIn)
+  @Html.TextBoxFor(model => model.DineIn)
+  <br>
+  @Html.LabelFor(model => model.Address)
+  @Html.TextBoxFor(model => model.Address)
+  <br>
+  @Html.LabelFor(model => model.PhoneNumber)
+  @Html.TextBoxFor(model => model.PhoneNumber)
+  <br>
+  @Html.LabelFor(model => model.PassedHealthInspection)
+  @Html.TextBoxFor(model => model.PassedHealthInspection)
+
+  @Html.DropDownList("PassedHealthInspection", 
+                    new SelectList(Enum.GetValues(typeof(PassedHealthInspection))),
+                    "Passed health inspection",
+                    new { @class = "form-control" })
+  
+  
+  
+  <input type="submit" value="Add new restaurant" class="btn btn-default" />
+
+}
+
+<p>@Html.ActionLink("Show all restaurants", "Index")</p>
