@@ -19,12 +19,21 @@ namespace FavoriteRestaurant.Controllers
     public ActionResult Create()
     {
       ViewBag.CuisineId = new SelectList(_db.Cuisines, "CuisineId", "Type");
+      ViewBag.PassedHealthInspection = new SelectList(_db.Restaurants, "PassedHealthInspection", "Passed Health Inspection");
       return View();
+    }
+
+    [HttpPost]
+    public ActionResult Create(Restaurant restaurant)
+    {
+      _db.Restaurants.Add(restaurant);
+      _db.SaveChanges();
+      return RedirectToAction("Index");
     }
 
     public ActionResult Index()
     {
-      List<Restaurant> model = _db.Restaurants.Include(restaurants => restaurants.Cuisine).ToList();
+      List<Restaurant> model = _db.Restaurants.Include(restaurants => restaurants.CuisineId).ToList();
       model.OrderBy(restaurants => restaurants.Name);
       return View(model);
     }

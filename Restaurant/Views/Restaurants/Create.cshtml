@@ -30,14 +30,13 @@
   @Html.TextBoxFor(model => model.PassedHealthInspection)
 
   @Html.DropDownList("PassedHealthInspection", 
-                    new SelectList(Enum.GetValues(typeof(PassedHealthInspection))),
+                    new SelectList(Enum.GetValues(typeof(Health))),
                     "Passed health inspection",
                     new { @class = "form-control" })
   
   
   
   <input type="submit" value="Add new restaurant" class="btn btn-default" />
-
 }
 
 <p>@Html.ActionLink("Show all restaurants", "Index")</p>

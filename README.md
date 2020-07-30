@@ -52,6 +52,7 @@ _Keep track of your favorite restaurants, any details about them and what type o
 | Cannot convert type 'Restaurant.Models.Restaurant.Models.Cuisine' to 'Restaurant.Models.Cuisine' [Restaurant] | Creating the Index view for Cuisine | Y | Update EntityFrameworkCore to version 2.2.6, delete bin and obj folders, run `dotnet restore` and `dotnet build`, close and re-open VS Code |
 | Controllers\RestaurantsController.cs(29,12): error CS0118: 'Restaurant' is a namespace but is used like a type [C:\Users\blindgren\Desktop\EPICODUS\Full Time Bootcamp\CS-and-NETCore\Restaurant.Solution\Restaurant\Restaurant.csproj] | Running `dotnet build` | Y | Update EntityFrameworkCore to version 2.2.6, delete bin and obj folders, run `dotnet restore` and `dotnet build`, close and re-open VS Code |
 | Controllers\RestaurantsController.cs(29,83): error CS1061: 'Restaurant' does not contain a definition for 'Cuisine' and no accessible extension method 'Cuisine' accepting a first argument of type 'Restaurant' could be found (are you missing a using directive or an assembly reference?) [C:\Users\blindgren\Desktop\EPICODUS\Full Time Bootcamp\CS-and-NETCore\Restaurant.Solution\Restaurant\Restaurant.csproj] | Running `dotnet build` | Y | Update EntityFrameworkCore to version 2.2.6, delete bin and obj folders, run `dotnet restore` and `dotnet build`, close and re-open VS Code |
+| Ambiguity between 'Views_Restaurants_Create.Html' and 'Views_Restaurants_Create.Html' [FavoriteRestaurant] |
 
 
 ## Support and contact details
