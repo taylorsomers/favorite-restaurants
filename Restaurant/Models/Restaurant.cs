@@ -16,9 +16,9 @@ namespace FavoriteRestaurant.Models
     public virtual Cuisine Cuisine { get; set; }
   }
 
-    public enum PassedHealthInspection
-    {
-      Yes,
-      No   
-    }
+  public enum Health
+  {
+    Yes,
+    No
+  }
 }
