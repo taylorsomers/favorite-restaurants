@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+
+footer {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  color:#CCC;
+  background:#333;
+  padding:8px;
+}
+
+.btn-default {
+  margin-top: 25px;
+  margin-bottom: 100px;
+}

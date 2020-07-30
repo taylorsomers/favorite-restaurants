@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="~/css/styles.css">
   </head>
   <body>
-    @RenderBody()
+    <div class="container">
+      @RenderBody()
+      <footer>
+        <p>@Html.ActionLink("Home", "Index", "Home")</p>
+      </footer>
+    </div>
   </body>
 </html>
