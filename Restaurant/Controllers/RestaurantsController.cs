@@ -18,6 +18,7 @@ namespace FavoriteRestaurant.Controllers
 
     public ActionResult Create()
     {
+      ViewBag.Hello = "Hello world!"; // Restaurant Create.cshtml line 8
       ViewBag.CuisineId = new SelectList(_db.Cuisines, "CuisineId", "Type");
       ViewBag.PassedHealthInspection = new SelectList(_db.Restaurants, "PassedHealthInspection", "Passed Health Inspection");
       return View();

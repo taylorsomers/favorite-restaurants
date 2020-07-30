@@ -5,6 +5,7 @@
 @model FavoriteRestaurant.Models.Restaurant
 @using FavoriteRestaurant.Models
 
+@ViewBag.Hello
 <h4>Add a new restaurant</h4>
 
 @using (Html.BeginForm())
@@ -31,7 +32,11 @@
   @Html.DropDownList("PassedHealthInspection",
                     new SelectList(Enum.GetValues(typeof(Health))),
                     new { @class = "form-control" })
-  
+
+
+  @Html.LabelFor(model => model.Cuisine)
+  @Html.DropDownList("CuisineId")
+  @* this is connected to the viewbag from the RestaurantController on line 22 *@
   
   
   <input type="submit" value="Add new restaurant" class="btn btn-default" />
